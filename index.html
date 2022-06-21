@@ -3,7 +3,58 @@
     <head>
         <meta charset="utf-8">
         <title>Unphilosophical Podcast</title>
-    </head>
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: 'Montserrat', serif;
+                background: #42f590;
+                color: #1d3c45;
+                margin: 
+            }
+
+            #heading {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 290px;
+                color: #fff;
+            }
+
+            #heading h1 {
+                font-size: 6em;
+                margin: 700 0;
+                font-weight: 400;
+            }
+
+            #heading p {
+                font-size: 1.2em;
+                margin: 32px auto auto;
+                padding: 0 16px;
+            }
+
+            nav a {
+	            margin: 0 8px;
+            	text-decoration: none;
+	            color: blue;
+            	transition: all 0.3s;
+            }
+            
+            nav {
+                margin: 16px 16px 0 auto;
+            }
+            
+            nav a:hover {
+	            color: #d2601a;
+            }
+
+
+        </style>
+    </head> 
     <body>
         <section id="heading">
             <nav>
@@ -13,19 +64,30 @@
                 <a href="#team">Team</a>
                 <a href="#contect">Contact Info</a>
             </nav>
-            <h1>The Unphilosophical Podcast</h1>
+            <center><h1>The Unphilosophical Podcast</h1></center>
         </section>
-        <section id="listen"> 
-            <h2>Where to Listen</h2>
+        <section id="listen">
+            <center><h2>Where to Listen</h2></center>
+            <center><a href="https://anchor.fm/" target="_blank">
+            <img src="files/anchor.png"></a>
+            <a href="https://open.spotify.com/" target="_blank">
+            <img src="files/spotify.png"></a>
+            <a href="https://www.google.com/podcasts" target="_blank">
+            <img src="files/google-podcasts.png"></a>
+            <a href="https://podcasts.apple.com/" target="_blank">
+            <img src="files/apple-podcasts.png"></a></center>
         </section>
         <section id="about">
-            <h2>About Us</h2>
+            <center><h2>About Us</h2></center>
+        </section>
+        <section id="socials">
+            <center><h2>Our Socials</h2></center>
         </section>
         <section id="team">
-            <h2>Meet The Team!</h2>
+            <center><h2>Meet The Team!</h2></center>
         </section>
         <section id="contact">
-            <h2>Feel Free To Contact Us!</h2>
+            <center><h2>Feel Free To Contact Us!</h2></center>
         </section>
     </body>
 </html>
