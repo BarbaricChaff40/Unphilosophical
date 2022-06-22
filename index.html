@@ -63,7 +63,93 @@
 			width: 200px;
 			margin: 0 16px;
 		}
-		
+		#grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: 16px auto;
+	margin-top: 32px;
+	padding: 0 16px;
+}
+
+#grid > div {
+	width: 33.3333333333%;
+	max-width: 33.3333333333%;
+	min-width: 33.3333333333%;
+	flex-basis: 33.3333333333%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 16px;
+}
+
+#grid h1 {
+	font-size: 16px;
+	margin-top: 12px;
+}
+
+#grid p {
+	font-size: 12px;
+	padding: 0 16px;
+}
+
+#grid img {
+	margin: 0 auto;
+	height: 200px;
+}
+
+@media (max-width: 800px) {
+	#grid > div {
+		width: 50% !important;
+		max-width: 50% !important;
+		min-width: 50% !important;
+		flex-basis: 50% !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#hero h1 {
+		font-size: 4em;
+	}
+
+
+	#hero p {
+		font-size: 1em;
+		padding: 0 16px;
+	}
+
+	#podcast {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 64px;
+		margin-bottom: 32px;
+	}
+
+	#podcast img {
+		max-width: 300px;
+		margin: 16px auto;
+		display: block;
+	}
+
+	#about h1, #contact h1, #team > h1 {
+		font-size: 2em;
+	}
+
+	#grid > div {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 100% !important;
+		flex-basis: 100% !important;
+	}
+
+	#grid p {
+		font-size: 12px;
+		padding: 0 8px;
+	}
+
+}
         </style>
     </head> 
     <body>
@@ -97,6 +183,48 @@
         </section>
         <section id="team">
             <center><h2>Meet The Team!</h2></center>
+		<div id="grid">
+        <div>
+          <img src="files/arnab.jpg"/>
+          <h1>Arnab Sircar</h1>
+          <p>Arnab is a senior at Unionville High School with a keen interest in topics ranging from mathematics and technology to economic and societal matters. He looks for common and interesting patterns in diverse environments and tries to understand the how and the why. Arnab likes to look at maps, explore his heritage and the Bengali language, fly drones, and solve Rubik's cubes.</p>
+        </div>
+        <div>
+          <img src="files/ansh.jpg"/>
+          <h1>Ansh Patel</h1>
+          <p>Ansh is a senior at Unionville High School with an interest in computers and Cyber Security. He has been actively working with other people with similar interests and trying to push for new technology for the world. Ansh enjoys to learn new things, travel whenever he can, and learn his own family history and religion.</p>
+        </div>
+        <div>
+          <img src="files/ani.jpg"/>
+          <h1>Aniruddh Mutnuru</h1>
+          <p>Aniruddh is a senior at Unionville High School. As one of the hosts, he researches and coordinates sessions with his team members. In college, he hopes to major in computer science and loves to talk with his friends.</p>
+        </div>
+        <div>
+          <img src="files/arjun.jpg"/>
+          <h1>Arjun Suryawanshi</h1>
+          <p>Arjun is a sophomore at Unionville High School. He is currently the audio editor for Kathakar and edits the videos for clarity along with adding the intro, outro, and music. He participates in the school's debate team and math club and loves to be a part of both of them. Outside of school, he plays the guitar and chess, playing the latter at a competitive level in middle school.</p>
+        </div>
+        <div>
+          <img src="files/connor.jpg"/>
+          <h1>Connor Biederman</h1>
+          <p>Connor Biederman is a senior at Unionville High School. He is the social media manager for the podcast and has had a passion for history since he was a child.</p>
+        </div>
+        <div>
+          <img src="files/erik.jpg"/>
+          <h1>Erik Chou</h1>
+          <p>Erik is a senior at Unionville High School interested in building web applications and learning WebGL. He is planning to major in Computer Science with a focus on pushing the boundaries of web-based experiences. In his free time, he likes backpacking and playing volleyball.</p>
+        </div>
+        <div>
+          <img src="files/simon.jpg"/>
+          <h1>Simon Hjaltason</h1>
+          <p>Simon is an art student with a passion for graphic design. He is fluent in graphic design programs such as GIMP, which he uses to design the art for all of the Kathakar Podcast. In addition to his skills in design, he excels in his many AP courses as a Unionville High School Senior.</p>
+        </div>
+        <div>
+          <img src="files/adam.jpg"/>
+          <h1>Adam Luo</h1>
+          <p>Adam is a senior at Unionville High School with a passion for biology and chemistry. He loves learning about the anatomy and physiology of various organisms. In his free time, he enjoys watching dissection videos and documentaries, listening to classical music, and reading. As the general manager, Adam keeps tabs on progress and helps maintain the projects on schedule.</p>
+        </div>
+      </div>
         </section>
         <section id="contact">
             <center><h2>Feel Free To Contact Us!</h2></center>
